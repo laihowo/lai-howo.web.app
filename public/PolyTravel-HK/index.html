@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PolyTravel HK</title>
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+	<link rel="stylesheet" type="text/css" href="css/copy.css">
+	<link rel="icon" href="https://raw.githubusercontent.com/google/material-design-icons/master/file/1x_web/ic_cloud_black_18dp.png">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<script src='js/cookie.js'></script>
+  </head>
+  <body onload="checkCookie()">
+	
+    <div id="left-panel">
+	<h1>PolyTravel HK</h1>
+      <div id="inputs">
+		<div id="boxTag"></div><input id="Origin" type="text" placeholder="GPS location" required><br>
+		<button onclick="getLocation()" >Fill in Your Location</button>
+		<div id="boxTag2"></div><input id="Destination" type="text" placeholder="Enter a location" required><br>
+		<button onclick="check()">Route</button><br>
+		<button onclick="deleteCookie()">Clear</button><br><br>
+		<div id="like_button_container"></div>
+		<div id="root"></div>
+      </div>
+		<!-- <div class="pac-card" id="pac-card">
+	   <div>
+		<div id="title">
+		  Autocomplete search
+		</div>
+		<div id="type-selector" class="pac-controls">
+		  <input type="radio" name="type" id="changetype-all" checked="checked">
+		  <label for="changetype-all">All</label>
+
+		  <input type="radio" name="type" id="changetype-establishment">
+		  <label for="changetype-establishment">Establishments</label>
+
+		  <input type="radio" name="type" id="changetype-address">
+		  <label for="changetype-address">Addresses</label>
+
+		  <input type="radio" name="type" id="changetype-geocode">
+		  <label for="changetype-geocode">Geocodes</label>
+		</div>
+		<div id="strict-bounds-selector" class="pac-controls">
+		  <input type="checkbox" id="use-strict-bounds" value="">
+		  <label for="use-strict-bounds">Strict Bounds</label>
+		</div>
+	  </div> 
+	  <div id="pac-container">
+		<input id="pac-input" type="text"
+			placeholder="Enter a location">
+	  </div> 
+	</div>
+	<div id="map"></div>
+	<div id="infowindow-content">
+	  <img src="" width="16" height="16" id="place-icon">
+	  <span id="place-name"  class="title"></span><br>
+	  <span id="place-address"></span>
+	</div> -->
+		<div id='result'>
+			<strong>Results</strong>
+			<div id="output"></div>
+			<button onclick="WhatsApp()">Send WhatsApp</button><br>
+			<div class="tooltip">
+				<button onclick="copyFunction()" onmouseout="outFunc()">
+				<span class="tooltiptext" id="myTooltip">Copy to Clipboard</span>
+				Copy Text</button>
+			</div><br>
+			<button onclick="location.href='.'">Try Again</button><br>
+		</div>
+    </div>
+	
+	
+	
+	<!-- Load React. -->
+	<!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+	<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+	<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+	<!-- Load our React component. -->
+	<script src="js/like_button.js"></script>
+	<script src="js/tic_tac_toe.js"></script>
+	
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAd6UE8oU8Ktui9F0Z9sg3l7SgT6g-Y2IU&libraries=places">
+    </script>
+    <script src='js/route.js'></script>
+	<script src='js/autocomplete.js'></script>
+	
+	<script>
+		
+	</script>
+	
+	<script src='js/share.js'></script>
+  </body>
+</html>

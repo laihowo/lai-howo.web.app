@@ -1,0 +1,35 @@
+#left-panel {
+font-family: 'Roboto','sans-serif';
+line-height: 30px;
+padding-left: 10px;
+}
+
+#left-panel select, #left-panel input {
+font-size: 15px;
+}
+
+#left-panel select {
+width: 100%;
+}
+
+#left-panel i {
+font-size: 20px;
+}
+html, body {
+height: 100%;
+margin: 0;
+padding: 0;
+}
+#map {
+height: 100%;
+width: 50%;
+display: none;
+}
+#left-panel {
+float: left;
+width: 90%;
+padding-left: 2%;
+}
+#output {
+font-size: 15px;
+}
